@@ -3,7 +3,7 @@ import time
 import win32com.client  # pywin32
 
 # github.com/rhythmlogger/tts
-folder_path = 'C:\\TEST\\TTS\\log\\'
+folder_path = os.path.dirname(os.path.abspath(__file__)) + "\\log\\"
 speaker = win32com.client.Dispatch('SAPI.SpVoice')
 
 
