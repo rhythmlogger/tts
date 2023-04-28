@@ -9,7 +9,7 @@ speaker = win32com.client.Dispatch('SAPI.SpVoice')
 
 def loop_test():
     while True:
-        time.sleep(3)
+        time.sleep(2)
         # Check if the folder exists
         if os.path.exists(folder_path):
             # Get a list of files in the folder

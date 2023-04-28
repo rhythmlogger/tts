@@ -2,12 +2,16 @@
 const fs = require('fs');
 const tmi = require('tmi.js');
 var path = require('path');
+
+//temp log folder - chat message 
 folder = path.resolve(__dirname) + '\\log\\';
 
+// tmi.js load
 const client = new tmi.Client({
     channels: ['32comma'] //<-- channel name
 });
 
+//channel connect
 client.connect();
 
 console.log('Server is running ');
